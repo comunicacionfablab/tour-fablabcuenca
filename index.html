@@ -17,7 +17,7 @@
             border-radius: 10px;
             padding: 30px;
             box-sizing: border-box;
-            background-color: #ffffff;
+            background-color: #ffffff; /* Keeps the frame card pure white */
         }
         iframe {
             width: 100%;
@@ -28,7 +28,8 @@
         }
         body {
             background-image: none !important;    
-            background-color: #FFFBF6 !important;   
+            /* CHANGED: Made the outer background completely clear */
+            background-color: transparent !important;   
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position: center;
@@ -44,7 +45,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color: transparent;">
     <div id="tour-container">
         <iframe width="100%" height="100%" src="images/app-files/index.html" frameborder="0" allowfullscreen></iframe>
     </div>
