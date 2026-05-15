@@ -8,43 +8,33 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            /* PRESERVED: Your gray-white background fix */
             background-image: none !important;      
             background-color: #f5f5f7 !important;   
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        h1 {
-            margin-top: 0;
-            margin-bottom: 20px;
+            height: 100%;
         }
         #tour-container {
             width: 80%;
             height: 75vh;             
+            margin: 40px auto;
             border: 2px solid #000000;
             border-radius: 10px;
             background-color: #ffffff;             
-            padding: 0px;             /* Changed to 0px so the tour goes completely edge-to-edge inside the black frame */
+            padding: 30px;            
             box-sizing: border-box;   
-            overflow: hidden;         
         }
         iframe {
+            width: 100%;
+            height: 100%;             
             display: block;
-            margin: 0;
-            padding: 0;
         }
     </style>
 </head>
 <body>
-    <h1>Tour Virtual de FabLab Cuenca</h1>
     <div id="tour-container">
-        <iframe width="100%" height="100%" src="images/app-files5/index.html" frameborder="0" allowfullscreen></iframe>
+        <iframe src="images/app-files5/index.html" frameborder="0" allowfullscreen></iframe>
     </div>
 </body>
 </html>
